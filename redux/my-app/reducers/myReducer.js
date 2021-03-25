@@ -6,7 +6,7 @@ const INITIAL_STATE = {
     switch (action.type) {
       case 'NEW_ACTION': // action name
         return { state: action.state };
-      default: // else
+      default:
         return state;
     }
   }
