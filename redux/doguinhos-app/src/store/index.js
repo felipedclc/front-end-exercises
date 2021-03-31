@@ -1,5 +1,7 @@
 // src/store/index.js
 import { createStore, applyMiddleware } from 'redux';
+// import { getImage, requestDogImage, failedRequest } from '../actions';
+// import rootReducer from '../reducers';
 import thunk from 'redux-thunk';
 
 const GET_IMAGE = 'GET_IMAGE';
@@ -16,7 +18,7 @@ function requestDog() {
 
 function failedRequest(error) {
   return { type: FAILED_REQUEST, payload: error };
-}
+} 
 
 export function fetchDog() {
   return (dispatch) => {
