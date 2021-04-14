@@ -56,6 +56,7 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
   add: (product) => dispatch(addToCart(product)),
  // add = props     despacha uma ação(addToCart)
+ // dispatch altera o estado da store
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProductList); 
